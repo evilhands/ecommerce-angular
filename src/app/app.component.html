@@ -1,1 +1,25 @@
-<app-product-item></app-product-item>
+<mat-toolbar>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Open sidenav"
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>E-Commerce</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button aria-label="Language">
+    <mat-icon>language</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Login">
+    <mat-icon>login</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Shopping Cart">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened> Sidenav content </mat-sidenav>
+  <mat-sidenav-content> Sidenav content </mat-sidenav-content>
+</mat-sidenav-container>
