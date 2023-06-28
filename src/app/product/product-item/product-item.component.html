@@ -1,5 +1,4 @@
-<ul *ngIf="$productList | async as products; else noData">
-  <mat-card *ngFor="let product of products">
+  <mat-card>
     <mat-card-header>
       <mat-card-title>{{product.name}}</mat-card-title>
       <mat-card-subtitle>{{product.name}}</mat-card-subtitle>
@@ -9,5 +8,4 @@
       <button mat-button>ADD</button>
     </mat-card-actions>
   </mat-card>
-</ul>
-<ng-template #noData>No Data Available</ng-template>
+

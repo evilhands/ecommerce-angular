@@ -1,8 +1,7 @@
 import { Routes } from '@angular/router';
-import { ProductItemComponent } from './product/product-item/product-item.component';
-
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 export const routes: Routes = [
-    { path: '', component: ProductItemComponent },
-    { path: 'home', component: ProductItemComponent },
+  { path: '', component: LandingPageComponent },
+  { path: 'home', component: LandingPageComponent },
 ];
