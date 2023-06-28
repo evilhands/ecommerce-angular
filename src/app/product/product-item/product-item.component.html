@@ -1,0 +1,7 @@
+
+<ul *ngIf="$productList | async as products else noData">
+    <li *ngFor="let course of products">
+        {{course.name}}
+    </li> 
+</ul>
+<ng-template #noData>No Data Available</ng-template>
